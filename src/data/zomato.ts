@@ -16,6 +16,7 @@ export interface ProjectData {
     scope: string;
   };
   heroAlt: string;
+  heroVideo?: string;
   valueAdded: {
     label: string;
     statement: string;
@@ -44,6 +45,7 @@ export const zomatoProject: ProjectData = {
   },
   heroAlt:
     'Zomato Delivery — product-screen composition showing the redesigned delivery worker interface',
+  heroVideo: '/projects/zomato/cover-loop.mp4',
   valueAdded: {
     label: 'Value added for Zomato',
     statement:
@@ -54,8 +56,7 @@ export const zomatoProject: ProjectData = {
     body: 'This project focuses on full-time food-delivery workers navigating the final stretch between a mapped destination and the customer\'s actual doorstep. Apartment blocks, unclear entrances and unreliable instructions turn a short distance into repeated calls, physical effort and delivery delays.',
   },
   systemMap: {
-    // Replace with the real asset path once available, e.g. '/assets/system-map.png'
-    src: null,
+    src: '/projects/zomato/Delivery Flow.jpg',
     alt: 'System map showing the relationships between delivery workers, customers, apartment blocks, navigation gaps and support touchpoints that create last-hundred-meter friction',
   },
 };

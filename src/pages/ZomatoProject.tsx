@@ -25,6 +25,7 @@ export function ZomatoProject() {
             title={project.title}
             promise={project.promise}
             heroAlt={project.heroAlt}
+            heroVideo={project.heroVideo}
           />
 
           {/* 2. Metadata grid */}
