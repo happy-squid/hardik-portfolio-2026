@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
 import { ZomatoProject } from './pages/ZomatoProject';
+import { AirportProject } from './pages/AirportProject';
 
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Default: redirect root to the Zomato project page */}
-        <Route path="/" element={<Navigate to="/projects/zomato-delivery" replace />} />
+        {/* Root: portfolio homepage */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/projects/zomato-delivery" element={<ZomatoProject />} />
-        {/* Catch-all: redirect unknown routes to the project page */}
-        <Route path="*" element={<Navigate to="/projects/zomato-delivery" replace />} />
+        <Route path="/projects/airport-amr" element={<AirportProject />} />
+        {/* Catch-all: redirect unknown routes to the homepage */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

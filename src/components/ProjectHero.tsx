@@ -1,6 +1,8 @@
+import { Reading } from './Layout';
+
 interface ProjectHeroProps {
   title: string;
-  promise: string;
+  promise?: string;
   heroAlt: string;
   /** Path to a looping background video (served from /public). Optional. */
   heroVideo?: string;
@@ -14,15 +16,17 @@ interface ProjectHeroProps {
 export function ProjectHero({ title, promise, heroAlt, heroVideo }: ProjectHeroProps) {
   return (
     <section aria-label="Project overview">
-      {/* Title and promise */}
-      <div className="mb-8">
+      {/* Title and promise — reading width */}
+      <Reading className="mb-8">
         <h1 className="text-3xl font-semibold tracking-tight text-[#111] sm:text-4xl lg:text-[2.75rem]">
           {title}
         </h1>
-        <p className="mt-3 text-base text-neutral-500 sm:text-lg">
-          {promise}
-        </p>
-      </div>
+        {promise && (
+          <p className="mt-3 text-base text-neutral-500 sm:text-lg">
+            {promise}
+          </p>
+        )}
+      </Reading>
 
       {/* Hero media — aspect ratio switches at md breakpoint */}
       <div

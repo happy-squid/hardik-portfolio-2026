@@ -13,7 +13,8 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-medium-image-zoom": "^5.4.8",
-    "react-router-dom": "^7.18.0"
+    "react-router-dom": "^7.18.0",
+    "react-zoom-pan-pinch": "^4.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Container } from './Layout';
 
 interface AppShellProps {
   children: ReactNode;
@@ -12,11 +13,11 @@ export function AppShell({ children }: AppShellProps) {
   return (
     <div className="min-h-screen bg-white text-[#111]">
       <header className="border-b border-neutral-200 py-4">
-        <div className="mx-auto w-full max-w-[1120px] px-4 sm:px-6 lg:px-12">
+        <Container>
           <span className="inline-block rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium tracking-wide text-neutral-500">
             Hardik Monga
           </span>
-        </div>
+        </Container>
       </header>
 
       <main id="main-content">
