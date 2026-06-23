@@ -55,19 +55,18 @@ export const homePageData: HomePageData = {
     heading: 'Product / Interaction Designer',
     main: 'I design product interfaces and phygital interaction systems, from delivery workflows to airport mobility touchpoints.',
     supporting:
-      'My work focuses on turning messy real-world situations into clear flows, screens, and service touchpoints.',
+      'I turn messy real-world situations into clear flows, screens, and service touchpoints that help people decide what to do next.',
   },
   featuredProjects: [
     {
-      title:
-        "Helping delivery partners find the right entrance after reaching the customer's building",
+      title: 'Helping delivery partners find the right entrance after arrival',
       description:
         'A product design case study focused on last-hundred-meter delivery friction, community landmarks, and rider-facing UI decisions.',
       tags: ['Product Design', 'UX Research', 'UI', 'Systems Mapping'],
       href: '/projects/zomato-delivery',
       thumbnail: {
-        src: '/projects/zomato/prototype.png',
-        alt: 'Prototype of the Zomato delivery screen on a phone, showing community landmark photos with votes and rider-written directions.',
+        src: '/projects/zomato/drivers-ill.png',
+        alt: 'Illustration of Zomato delivery riders coordinating over chat and a shared location pin to find the right entrance.',
       },
       proof:
         'Shows how I identify a narrow workflow problem and translate it into a screen-level product response.',
