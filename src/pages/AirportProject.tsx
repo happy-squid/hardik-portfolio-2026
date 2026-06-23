@@ -10,6 +10,7 @@ import { KioskAccessSection } from '../components/KioskAccessSection';
 import { VehicleScreensGrid } from '../components/VehicleScreensGrid';
 import { DesignDecisionCards } from '../components/DesignDecisionCards';
 import { TestingNextSection } from '../components/TestingNextSection';
+import { ProjectFooterNav } from '../components/ProjectFooterNav';
 import { airportProject } from '../data/airport';
 
 /**
@@ -108,30 +109,13 @@ export function AirportProject() {
             <TestingNextSection data={project.testingNext} />
           )}
 
-          {/* 10. Contact footer */}
-          {project.footerCta && (
-            <section
-              aria-label="Contact"
-              className="border-t border-neutral-200 pt-8"
-            >
-              <Reading>
-                <h2 className="text-xl font-semibold text-[#111] sm:text-2xl">
-                  {project.footerCta.heading}
-                </h2>
-                <p className="mt-3 text-base leading-relaxed text-neutral-600">
-                  {project.footerCta.body}
-                </p>
-                {project.footerCta.email && (
-                  <a
-                    href={`mailto:${project.footerCta.email}`}
-                    className="mt-4 inline-block text-base font-medium text-[#111] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]"
-                  >
-                    {project.footerCta.email}
-                  </a>
-                )}
-              </Reading>
-            </section>
-          )}
+          {/* 10. Closing CTA + navigation to home / other case study */}
+          <ProjectFooterNav
+            email="hardikmonga311@gmail.com"
+            otherProjectHref="/projects/zomato-delivery"
+            otherProjectTitle="Helping delivery partners find the right entrance after arrival"
+            otherProjectDescription="Last-hundred-meter delivery friction, community landmarks, and rider-facing UI decisions."
+          />
 
         </div>
       </Container>

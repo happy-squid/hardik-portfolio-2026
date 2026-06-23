@@ -10,6 +10,7 @@ import { ProjectEvidence } from '../components/ProjectEvidence';
 import { SolutionPreview } from '../components/SolutionPreview';
 import { HowItWorks } from '../components/HowItWorks';
 import { AlternativesGrid } from '../components/AlternativesGrid';
+import { ProjectFooterNav } from '../components/ProjectFooterNav';
 import { zomatoProject } from '../data/zomato';
 
 /**
@@ -90,6 +91,14 @@ export function ZomatoProject() {
           {project.alternatives && project.alternatives.length > 0 && (
             <AlternativesGrid items={project.alternatives} />
           )}
+
+          {/* 10. Closing CTA + navigation to home / other case study */}
+          <ProjectFooterNav
+            email="hardikmonga311@gmail.com"
+            otherProjectHref="/projects/airport-amr"
+            otherProjectTitle="Passenger interaction layers for autonomous airport mobility"
+            otherProjectDescription="GenUI cards, kiosks, and AMR screens across airport mobility touchpoints."
+          />
 
         </div>
       </Container>
