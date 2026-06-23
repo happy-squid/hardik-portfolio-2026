@@ -20,11 +20,8 @@ export function HomePage() {
       <header className="border-b border-neutral-200 py-4">
         <Container>
           <nav aria-label="Primary" className="flex items-center justify-between gap-4">
-            <a
-              href="#top"
-              className="inline-block rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium tracking-wide text-neutral-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#111]"
-            >
-              {data.name}
+            <a href="#top" aria-label="Go to homepage">
+              <img src="/logo.png" alt="Hardik Monga" className="h-5 w-auto" />
             </a>
             <ul className="flex items-center gap-5 text-sm text-neutral-600">
               <li>

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from './Layout';
 
 interface AppShellProps {
@@ -14,9 +15,9 @@ export function AppShell({ children }: AppShellProps) {
     <div className="min-h-screen bg-white text-[#111]">
       <header className="border-b border-neutral-200 py-4">
         <Container>
-          <span className="inline-block rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium tracking-wide text-neutral-500">
-            Hardik Monga
-          </span>
+          <Link to="/" aria-label="Go to homepage">
+            <img src="/logo.png" alt="Hardik Monga" className="h-5 w-auto" />
+          </Link>
         </Container>
       </header>
 
